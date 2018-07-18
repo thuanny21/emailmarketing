@@ -1,427 +1,108 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Vamo Comigo App - Bem vinda!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-    <title>Hello, world!</title>
+    <link href='http://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
 
-
-    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        body {
-            margin: 0 auto !important;
-            padding: 0 !important;
-            height: 100% !important;
-            width: 100% !important;
-            max-width: 600px;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        .wrapper {
-            margin: 1% auto;
-            font-family: Hind;
-            width: 100%;
-            max-width: 600px;
-        }
-        
-        .circulo img {
-            position: absolute;
-            max-width: 100%;
-        }
-        
-        .email_body {
-            width: 100%;
-            padding: 0 15px;
-            background: #00cdf0;
-            max-width: 600px;
-        }
-        
-        .email_body h5 {
-            color: white;
-            font-size: 1.0em;
-            padding-bottom: 25px;
-            padding-top: 110px;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .email_banner h2 {
-            color: white;
-            text-align: center;
-            margin-top: -200px;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .email_banner h4 {
-            color: white;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .email-text {
-            max-width: 600px;
-        }
-        
-        .email-text img {
-            height: 250px;
-            width: 450px;
-            margin-top: -8px;
-        }
-        
-        .email-text p {
-            margin-top: 20px;
-            margin-right: -45px;
-            margin-left: -20px;
-            font-size: 14px;
-            color: #555555;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .email-text2 {
-            background: #26DAF3;
-        }
-        
-        .email-text2 h6 {
-            color: white;
-            text-align: center;
-            padding-top: 30px;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .email-text2 p {
-            color: white;
-            text-align: center;
-            font-size: 12px;
-            padding-bottom: 30px;
-            padding-left: 70px;
-            padding-right: 70px;
-            margin-right: -50px;
-            margin-left: 100px;
-            font-family: 'Roboto-Bold', sans-serif;
-        }
-        
-        .email-text3 img {
-            max-width: 100%;
-            width: 100%;
-            max-width: 600px;
-            margin-bottom: 40px;
-            margin-top: -18px;
-        }
-        
-        .email-text3 ul {
-            margin-top: -90px;
-        }
-        
-        .email-text3 li {
-            display: inline-block;
-            padding: 2px 10px;
-        }
-        
-        .rodape .bg {
-            background: #F3F3F3;
-            padding-top: 15px;
-            padding-bottom: 10px;
-        }
-        
-        .rodape p {
-            color: #00B6EA;
-            font-size: 18px;
-            margin-bottom: 10px;
-            margin-top: -15px;
-            margin-left: 50px;
-            font-family: 'Roboto-Bold', sans-serif;
-        }
-        
-        .rodape button {
-            background: #26DAF3;
-            border: transparent;
-            border-radius: 30px;
-            width: 200px;
-            margin-bottom: 25px;
-            margin-top: -20px;
-        }
-        
-        .rodape li {
-            display: inline;
-            padding: 2px 10px;
-        }
-        
-        .rodape .texto2 p {
-            color: #8D8D8D;
-            font-size: 12px;
-            font-family: 'Roboto-Bold', sans-serif;
-        }
-        /* Telefones em landscape e abaixo */
-        
-        @media (max-width: 320px) {
-            .circulo img {
-                margin-left: 0%;
-            }
-            .email_banner h2 {
-                margin-top: -120px;
-                font-size: 16px;
-            }
-            .email-text p {
-                margin-left: 75px;
-                margin-right: -1250px;
-            }
-            .email-text2 h6 {
-                padding-top: 30px;
-            }
-            .email-text2 p {
-                margin-right: 10px;
-                margin-left: 10px;
-            }
-            .email-text3 li {
-                width: 60px;
-                margin-top: 20px;
-            }
-            .rodape p {
-                margin-top: -25px;
-                margin-left: 30px;
-            }
-            .rodape button {
-                width: 150px;
-                margin-left: -20px;
-            }
-            .rodape .texto2 p {
-                margin-right: -10px;
-                margin-left: -10px;
-                margin-top: 2px;
-            }
-        }
-        
-        @media (max-width: 375px) {
-            .circulo img {
-                margin-left: 0%;
-            }
-            .email_body h5 {
-                padding-bottom: 10px;
-                padding-top: 60px;
-            }
-            .email_banner h2 {
-                margin-top: -120px;
-                font-size: 20px;
-            }
-            .email_banner h4 {
-                font-size: 14px;
-            }
-            .email-text p {
-                margin-left: 60px;
-                margin-right: -1250px;
-            }
-            .email-text2 p {
-                margin-right: 10px;
-                margin-left: 10px;
-            }
-            .email-text3 li {
-                width: 60px;
-                margin-top: 20px;
-            }
-            .rodape p {
-                margin-top: -25px;
-                margin-left: 30px;
-            }
-            .rodape button {
-                width: 150px;
-                margin-left: -20px;
-            }
-            .rodape .texto2 p {
-                margin-right: -10px;
-                margin-left: -10px;
-                margin-top: 2px;
-            }
-        }
-        
-        @media (min-width: 425px) {
-            .circulo img {
-                margin-left: 0%;
-            }
-            .email_banner h2 {
-                margin-top: -150px;
-                font-size: 24px;
-            }
-            .email_banner h4 {
-                font-size: 14px;
-            }
-            .email-text p {
-                margin-left: 105px;
-                margin-right: -1200px;
-            }
-            .email-text img {
-                /*max-width: 100%;*/
-                /*height: 200px;*/
-                /*width: 350px;*/
-                margin-top: -8px
-            }
-            .email-text2 p {
-                margin-right: 0px;
-                margin-left: auto;
-            }
-            .email-text3 li {
-                width: 70px;
-                margin-top: 10px;
-            }
-            .rodape p {
-                margin-top: -25px;
-                margin-left: 70px;
-            }
-            .rodape button {
-                width: 150px;
-                margin-left: -20px;
-            }
-            .rodape .texto2 p {
-                margin-right: -10px;
-                margin-left: -10px;
-                margin-top: 2px;
-            }
-        }
-        /* Telefone em landscape a tablet em portrait */
-        
-        @media (min-width: 767px) {
-            .circulo img {
-                margin-left: 0%;
-            }
-            .email_banner h2 {
-                margin-top: -180px;
-                font-size: 30px;
-            }
-            .email_banner h4 {
-                font-size: 18px;
-            }
-            .email-text p {
-                margin-left: -50px;
-                /*padding-right: 20px;*/
-            }
-            .email-text img {
-                height: 250px;
-                width: 380px;
-                margin-top: -8px;
-                margin-left: 0px;
-            }
-            .email-text3 li {
-                margin-top: 0px;
-            }
-            .rodape p {
-                margin-top: -15px;
-            }
-            .rodape button {
-                width: 200px;
-                margin-left: 20px;
-            }
-            .rodape .texto2 p {
-                margin-right: -10px;
-                margin-left: -10px;
-                margin-top: 2px;
-            }
-        }
-    </style>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="wrapper">
-                <div class="email_banner">
-                    <div class="circulo">
-
-                        <a href="http://vamocomigo.com/app/"><img src="img/topo-email-marketing-vamo-comigo.png"></a>
-                    </div>
-                    <img src="img/img-rtopo-vamo-comigo.jpg">
-                    <div class="container">
-                        <div class="col-6">
-                            <h2>OLÁ REBECCA!
-                            </h2>
-                            <h4>BEM VINDA AO <br>VAMO COMIGO :)</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="email_body">
-                    <h5 class="text-center">NÃO PRECISA MAIS ESPERAR ALGUÉM APARECER PRA VIAJAR</h5>
-                </div>
-                <div class="email-text">
-                    <div class="row">
-                        <div class="col-sm-8"><img src="img/img-mulheres.jpg"></div>
-                        <div class="col-4 ">
-                            <p>Estamos felizes em te ter <br>com a gente e estamos prontas <br> pra te ajudar a encontrar <br> uma companheira de viagens.</p>
-                            <p>Nossa intenção aqui não é tirar <br> a sua liberdade de viajar sozinha,<br> mas abrir possibilidades para que <br> essa jornada seja ainda melhor.</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="email-text2">
-                    <div class="container">
-                        <h6 class="text-center">Assim que aparecer alguém com os mesmos planos e<br> interesses, a gente vai entrar em contato para fazer aquela ponte <br> entre vocês duas.</h6>
-                        <br>
-
-                        <p>Mas a sua participação também é importante nesse<br> processo pra achar alguém! Compartilhe a novidade com<br> suas amigas clicando nos botões abaixo:
-                        </p>
-                    </div>
-                </div>
-                <div class="email-text3">
-                    <img src="img/faixa-compartilhamento.jpg">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=www.vamocomigo.com%2Fapp"><img src="img/icon-facebook-vamo-comigo.png"></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/intent/tweet?text=:%20www.vamocomigo.com%2Fapp"><img src="img/icon-twitter-vamo-comigo.png"></a>
-                        </li>
-                        <li>
-                            <a href="http://us12.forward-to-friend.com/forward?u=cd5485b416ae2e78611c9ff00&id=58706153e1&e=7effdb87f2"><img src="img/icon-email-vamo-comigo.png"></a>
-                        </li>
-
-                    </ul>
-
-                </div>
-                <div class="rodape">
-                    <div class="row justify-content-end">
-                        <div class="col-6">
-                            <p>NOS VEMOS EM BREVE!</p>
-                        </div>
-
-                        <div class="col-6"><a href="http://vamocomigo.com/app/"><button type="button" class="btn btn-secondary btn-lg">Vamo Comigo</button></a></div>
-
-
-
-                    </div>
-                    <div class=" bg text-dark">
-                        <ul class="list-inline text-center">
-                            <li>
-                                <a href="https://www.facebook.com/vamocomigoblog/"><img src="img/rodape-facebook-vamo-comigo.png"></a>
-                            </li>
-
-                            <li>
-                                <a href="https://www.instagram.com/vamocomigo/"><img src="img/instagram-facebook-vamo-comigo.png"></a>
-                            </li>
-
-                            <li>
-                                <a href="http://vamocomigo.com/app/"><img src="img/rodape-site-vamo-comigo.png"></a>
-                            </li>
-                        </ul>
-                        <div class="texto2 text-center">
-                            <p>Vamo Comigo App - Copyright © 2018 - Todos os direitos reservados </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </body>
+</head>
 
 </html>
+
+<body style="margin: 0; padding: 0;">
+    <table border="1" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <table align="center" border="1" cellpadding="0" cellspacing="0" width="600">
+                    <tr>
+                        <td>
+                            <a href="http://vamocomigo.com/app/"><img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/topo-email-marketing-vamo-comigo.png" style="position: absolute"></a>
+                            <img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/img-rtopo-vamo-comigo.jpg" style="width: 600px;">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 style="margin-top: -210px; margin-left: 50px; color: white"> OLÁ REBECCA! </h2>
+                            <h4 style=" text-align: center; margin-right: 290px; color: white">BEM VINDA AO <br>VAMO COMIGO :)</h4>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#00c3ee">
+                            <h5 style="color:white; font-size: 16px; font-family:'Poppins', sans-serif; margin-left: 10px;text-align: center; margin-top: 30px; padding-bottom: 20px"> NÃO PRECISA MAIS ESPERAR ALGUÉM APARECER PRA VIAJAR
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/img2-mulheres.jpg">
+                            <p style="color: #555555;font-size:14px; font-family: 'Roboto', sans-serif; margin-top: -200px; margin-left: 350px">Estamos felizes em te ter <br>com a gente e estamos prontas <br> pra te ajudar a encontrar <br> uma companheira de viagens.</p>
+                            <p style="color: #555555;font-size:14px;margin-left: 350px; ">Nossa intenção aqui não é tirar <br> a sua liberdade de viajar sozinha,<br> mas abrir possibilidades para que <br> essa jornada seja ainda melhor.</p>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td bgcolor="#26DAF3">
+                            <h6 style="color: white; text-align: center; font-size: 16px; font-family: 'Roboto', sans-serif; padding-top: 30px ">Assim que aparecer alguém com os mesmos planos e<br> interesses, a gente vai entrar em contato para fazer aquela ponte <br> entre vocês duas.</h6>
+
+                            <p style="color: white; text-align: center; font-size: 12px; font-family: 'Roboto-Bold', sans-serif; padding-top: 40px; padding-bottom: 20px">Mas a sua participação também é importante nesse<br> processo pra achar alguém! Compartilhe a novidade com<br> suas amigas clicando nos botões abaixo:
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/faixa-compartilhamento.jpg">
+                            <ul style="margin-left: 170px; margin-top: -70px">
+                                <li style="display: inline;">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=www.vamocomigo.com%2Fapp"><img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/icon-facebook-vamo-comigo.png"></a>
+                                </li>
+                                <li style="display: inline;">
+                                    <a href="https://twitter.com/intent/tweet?text=:%20www.vamocomigo.com%2Fapp"><img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/icon-twitter-vamo-comigo.png"></a>
+                                </li>
+                                <li style="display: inline;">
+                                    <a href="http://us12.forward-to-friend.com/forward?u=cd5485b416ae2e78611c9ff00&id=58706153e1&e=7effdb87f2"><img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/icon-email-vamo-comigo.png"></a>
+                                </li>
+
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="color: #00B6EA; font-size: 18px; font-family: 'Roboto-Bold', sans-serif; margin-top: 40px; margin-left: 50px">NOS VEMOS EM BREVE!</p>
+                            <a href="http://vamocomigo.com/app/"><button type="button" class="btn btn-secondary btn-lg" style="background: #26DAF3; border: transparent; width: 200px; border-radius: 30px; margin-top: -60px; margin-bottom: 25px; margin-left: 350px">Vamo Comigo</button></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#F3F3F3">
+                            <ul style="margin-left: 230px; margin-top: 10px">
+                                <li style="display: inline">
+                                    <a href="https://www.facebook.com/vamocomigoblog/"><img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/rodape-facebook-vamo-comigo.png"></a>
+                                </li>
+
+                                <li style="display: inline;">
+                                    <a href="https://www.instagram.com/vamocomigo/"><img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/instagram-facebook-vamo-comigo.png"></a>
+                                </li>
+
+                                <li style="display: inline;">
+                                    <a href="http://vamocomigo.com/app/"><img src="https://vamocomigo.com/app/wp-content/uploads/2018/07/rodape-site-vamo-comigo.png"></a>
+                                </li>
+                            </ul>
+                            <p style="color: #8d8d8d; font-size: 12px; margin-left: 115px">Vamo Comigo App - Copyright © 2018 - Todos os direitos reservados </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
